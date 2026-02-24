@@ -46,7 +46,7 @@
   --color-card:           var(--color-cream-100);
   --color-text-primary:   var(--color-ink);
   --color-text-muted:     var(--color-ink-50);
-  --color-text-secondary: var(--color-gray-500);
+  --color-text-secondary: var(--color-gray-600);
   --color-action-primary:          var(--color-gray-900);
   --color-action-primary-hover:    var(--color-gray-700);
   --color-action-secondary:        var(--color-cream-200);
