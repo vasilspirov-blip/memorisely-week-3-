@@ -5,10 +5,10 @@ function Button({ label, variant = "secondary" }) {
     // Shared styles for all buttons
     const base = "mt-auto w-fill rounded-full px-4 py-4 text-sm font-regular cursor-pointer border-none transition-colors duration-200";
 
-    // Variant-specific colours — each class maps to a component token in index.css
+    // Variant-specific colours — semantic tokens only (action-*, text-on-action-*)
     const variants = {
-        secondary: "bg-btn-secondary text-text-primary hover:bg-btn-secondary-hover",
-        primary:   "bg-btn-primary text-white hover:bg-btn-primary-hover",
+        secondary: "bg-action-secondary text-text-on-action-secondary hover:bg-action-secondary-hover",
+        primary:   "bg-action-primary text-text-on-action-primary hover:bg-action-primary-hover",
     };
 
     return (

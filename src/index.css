@@ -14,12 +14,11 @@
  * There is no config file connecting them — the naming convention IS the mapping.
  *
  * TOKEN LAYERS
- * Tokens are organised in three layers:
+ * Tokens are organised in two layers (semantic only in components):
  *   1. Primitive  — raw palette values (gray-900, cream-50, etc.)
- *   2. Semantic   — purpose-based names that reference primitives (surface, text-primary)
- *   3. Component  — map semantic tokens to specific UI elements (btn-primary, btn-secondary)
+ *   2. Semantic   — purpose-based names (surface, text-primary, action-primary, action-secondary)
  *
- * Changing a primitive updates every semantic and component token that references it.
+ * Components use semantic tokens only; changing a primitive updates every semantic that references it.
  */
 
 @import "tailwindcss";
@@ -51,14 +50,8 @@
   --color-action-primary-hover:    var(--color-gray-700);
   --color-action-secondary:        var(--color-cream-200);
   --color-action-secondary-hover:  var(--color-cream-300);
-
-  /* ── Component — map to semantic tokens ──
-   * These power specific UI elements.
-   * e.g. --color-btn-primary → bg-btn-primary, hover:bg-btn-primary-hover */
-  --color-btn-primary:         var(--color-action-primary);
-  --color-btn-primary-hover:   var(--color-action-primary-hover);
-  --color-btn-secondary:       var(--color-action-secondary);
-  --color-btn-secondary-hover: var(--color-action-secondary-hover);
+  --color-text-on-action-primary:  #fff;
+  --color-text-on-action-secondary: var(--color-text-primary);
 
   /* ── Typography ──
    * --font-{name} → font-{name}
